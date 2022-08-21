@@ -19,7 +19,7 @@ def mysql_conn(in_host, in_user, in_pswrd):
 # mysql db operation
 def mysql_exec(in_query, in_db, db_op):
     try:
-        cursor = in_db.cursor()
+        cursor = in_db.cursor(dictionary=True)
         cursor.execute(in_query)
         if db_op == 'SELECT':
             return cursor.fetchall()
