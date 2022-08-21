@@ -7,7 +7,6 @@ def mongodb_conn(in_client):
     print(in_client)
     client = pymongo.MongoClient(in_client)
     print(client)
-    # client = pymongo.MongoClient("mongodb+srv://gs29001:Wiesbaden2021@cluster0.osssczq.mongodb.net/?retryWrites=true&w=majority")
     return client
 
 
